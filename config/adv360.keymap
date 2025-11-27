@@ -288,7 +288,7 @@
         };
 
         layer2 {
-            bindings = <&mo 2>;
+            bindings = <&mo 0>;
             key-positions = <46 59>;
         };
     };
@@ -299,10 +299,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&to 4      &kp N1       &kp N2    &kp N3     &kp N4                               &kp N5  &tog 5                                                               &mo 1       &kp N6  &kp N7                                 &kp N8     &kp N9        &kp N0         &to 2
+&to 4      &kp N1       &kp N2    &kp N3     &kp N4                               &kp N5  &tog 5                                                               &mo 1       &kp N6  &kp N7                                 &kp N8     &kp N9        &kp N0         &to 0
 &kp GRAVE  &kp Q        &kp W     &kp F      &kp P                                &kp B   &alttab                                                              &caps_word  &kp J   &kp L                                  &kp U      &kp Y         &kp SEMICOLON  &kp MINUS
 &kp TAB    &kp A        &kp R     &kp S      &kp T                                &kp G   &super_i       &kp LGUI   &kp LALT      &kp PRINTSCREEN  &kp ESCAPE  &kp DELETE  &kp M   &kp N                                  &kp E      &kp I         &kp O          &quote_swap
-&kp LSHFT  &kp Z        &kp X     &kp C      &kp D                                &kp V                             &kp HOME      &mo 2                                    &kp K   &kp H                                  &kp COMMA  &kp DOT       &kp FSLH       &kp RSHFT
+&kp LSHFT  &kp Z        &kp X     &kp C      &kp D                                &kp V                             &kp HOME      &mo 0                                    &kp K   &kp H                                  &kp COMMA  &kp DOT       &kp FSLH       &kp RSHFT
 &to 3      &key_repeat  &kp LEFT  &kp RIGHT  &layertapLeftBracket 1 LEFT_BRACKET          &kp BACKSPACE  &kp LCTRL  &kp END       &copyall         &kp ENTER   &kp SPACE           &layertapRightBracket 1 RIGHT_BRACKET  &kp DOWN   &kp UP_ARROW  &key_repeat    &to 1
             >;
         };
@@ -318,13 +318,13 @@
             >;
         };
 
-        macros {
+        Macros {
             bindings = <
-&to 0   &trans          &trans       &trans       &trans         &trans     &trans                                      &trans  &trans            &trans         &trans     &trans       &trans  &to 0
-&trans  &neovim_config  &website     &university  &phone_number  &birthday  &trans                                      &trans  &trans            &linkedin      &username  &trans       &trans  &trans
-&trans  &trans          &first_name  &start_date  &end_date      &github    &trans  &trans  &trans      &trans  &trans  &trans  &computerscience  &phone_number  &email     &internship  &trans  &trans
-&trans  &last_name      &full_name   &country     &trans         &trans                     &trans      &none                   &trans            &something     &trans     &trans       &trans  &trans
-&to 0   &trans          &trans       &trans       &trans                    &trans  &trans  &trans      &trans  &trans  &kp N0                    &trans         &trans     &trans       &trans  &to 0
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
